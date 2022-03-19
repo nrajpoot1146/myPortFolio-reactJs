@@ -1,0 +1,22 @@
+.Summary{
+    color: white;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    width:  100%;
+    height: fit-content;
+    transform: translate(0%, -70%);
+    /* text-align: center; */
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid red;
+    display: inline;
+    box-sizing: border-box;
+}
+
+.Hi {
+    display: block;
+    font-size: 30px;
+}

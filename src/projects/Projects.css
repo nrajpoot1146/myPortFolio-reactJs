@@ -1,0 +1,16 @@
+
+.Projects {
+    border: 3 px solid black;
+}
+
+.Project{
+    border: 1px solid red;
+    width: 80%;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+.ProjectTitle {
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
