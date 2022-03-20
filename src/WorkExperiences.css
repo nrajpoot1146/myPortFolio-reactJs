@@ -1,0 +1,83 @@
+.TimeLine {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.TimeLineEntry {
+    /* border: 0px solid red; */
+    min-height: 100px;
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+    position: relative;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    justify-content: center;
+}
+
+.TimeLineEntry:before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.TimeLineEntry-inner {
+    margin-left: 30px;
+}
+
+.TimeLineEntry-inner .icon {
+    /* background-color: red; */
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: auto;
+    border-radius: 50%;
+    text-align: center;
+    left: -19px;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0 0 5px #f2f3f7;
+}
+
+.CompanyName {
+    /* padding-left: 20%; */
+    position: relative;
+    /* top: 50%; */
+    /* left: 5%; */
+    /* transform: translate(0%, -50%); */
+    font-size: 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+.CompanyName:hover {
+    cursor: pointer;
+}
+
+.CompanyName:hover + .Circle{
+    background-color: red;
+}
+
+.Circle {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+}
+
+.circle:hover {
+    /* background-color: aliceblue; */
+}
+
+/* .color_1 {
+    background-color: #2c98;
+  } */
+  

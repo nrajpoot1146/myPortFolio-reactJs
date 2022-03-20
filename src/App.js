@@ -3,6 +3,7 @@ import './App.css';
 import Me from './Me';
 import Projects from './projects/Projects';
 import Fade from 'react-reveal'
+import WorkExperiences from './WorkExperiences';
 
 function hello() {
   console.log('hello');
@@ -18,6 +19,7 @@ class App extends Component {
 
     this.onClicksMe = this.onClicksMe.bind(this);
     this.onClickProjects = this.onClickProjects.bind(this);
+    this.onClickWorkExperience = this.onClickWorkExperience.bind(this);
   }
 
   onClicksMe(e) {
@@ -35,6 +37,16 @@ class App extends Component {
     );
   }
 
+  onClickWorkExperience(e){
+    this.setState(
+      (state, props) => {
+        return {
+          section: <WorkExperiences/>
+        }
+      }
+    );
+  }
+
   render() {
 
     return (<div className="App">
@@ -46,7 +58,7 @@ class App extends Component {
           <span onClick={this.onClicksMe} className='MenuItem'>Me!</span>
           <span onClick={this.onClickProjects} className='MenuItem'>Projects</span>
           <span onClick={hello} className='MenuItem'>Skills</span>
-          <span onClick={hello} className='MenuItem'>Work Experience</span>
+          <span onClick={this.onClickWorkExperience} className='MenuItem'>Work Experience</span>
         </div>
       </div>
       <div className="Section">

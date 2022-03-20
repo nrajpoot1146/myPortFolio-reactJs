@@ -7,9 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
   height: 100vh;
-  border: 1px solid black;
+  border: 0px solid black;
   box-sizing: border-box;
-  background-image: url('asset/download.jfif');
+  background-image: url('asset/download.jpg');
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -28,4 +28,16 @@ code {
 
 #root {
   height: 100%;
+}
+
+.color_1 {
+  background-color: #2c98ff;
+}
+
+.color_2 {
+  background-color: #ec5453;
+}
+
+.color_3 {
+  background-color: #a84cb8;
 }
