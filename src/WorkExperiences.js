@@ -1,6 +1,8 @@
 import { Component } from "react";
 import './WorkExperiences.css';
-import { FaPencilAlt } from 'react-icons/fa';
+import { FaPencilAlt,  } from 'react-icons/fa';
+import './Icons.css';
+import { SkillCPP, SkillJava, SkillPython, SkillC, SkillHtml, SkillCss, SkillJavaScript } from "./Skills";
 
 class WorkExperiences extends Component {
     render() {
@@ -16,7 +18,7 @@ class WorkExperiences extends Component {
                     "Developed a Testing Environment using C/C++, SCANeR Simulation Tool, and API",
                     "Analyze Log Validation tool that's implemented in the Python Programming language and reduce its time complexity by 90%.",
                     "Implemented Shared memory using Dynamic Link Library (DLL) for message passing between two processes"
-                ]} />
+                ]} usedSkills={[<SkillCPP/>, <SkillPython/>, <SkillC/>]}/>
 
             <WorkExperience
                 companyName="Chegg"
@@ -27,6 +29,7 @@ class WorkExperiences extends Component {
                     "Solved 400+ Programming Questions of cross languages (like C/C++, Java, Python, etc.).",
                     "Maintained 80+ C.F. score"
                 ]}
+                usedSkills={[<SkillC/>, <SkillCPP/>, <SkillPython/>, <SkillJava/>, <SkillHtml/>, <SkillCss/>]}
             />
 
             <WorkExperience
@@ -36,6 +39,11 @@ class WorkExperiences extends Component {
                 duration="(Jan 2020 - FEB 2020)"
                 desc={[
                     "Developed Virtual Lab of Physics Experiment named Measurement of high resistance by the method of leakage of a condenser and Measurement of Numerical aperture of optical fiber",
+                ]}
+                usedSkills = {[
+                    <SkillHtml />,
+                    <SkillCss />,
+                    <SkillJavaScript />
                 ]}
             />
         </div>
@@ -56,6 +64,12 @@ class WorkExperience extends Component {
         else {
             this.description = ""
         }
+
+        if (props.usedSkills !== undefined) {
+            this.usedSkills = this.props.usedSkills;//props.usedSkills.map((item) => {return <div className="skill"><span className="SkillsIcon IconCpp"></span><span>cpp</span></div>});
+        } else {
+            this.usedSkills = "";
+        }
     }
     render() {
         return (
@@ -74,6 +88,9 @@ class WorkExperience extends Component {
                     </div>
                     <div className="ProjectDescription" style={{ position: "relative" }}>
                         {this.description}
+                    </div>
+                    <div className="UsedSkills" style={{ position: "relative" }}>
+                        {this.usedSkills}
                     </div>
                 </div>
             </div>

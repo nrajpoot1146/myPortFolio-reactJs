@@ -2,7 +2,6 @@ import { Component } from 'react';
 import './App.css';
 import Me from './Me';
 import Projects from './projects/Projects';
-import Fade from 'react-reveal'
 import WorkExperiences from './WorkExperiences';
 
 function hello() {

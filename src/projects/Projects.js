@@ -62,7 +62,7 @@ class Project extends Component {
                     {this.description}
                 </div>
                 <div>
-                    <a href={this.props.url} target='_blank'>{this.props.url}</a>
+                    <a href={this.props.url} target='_blank' rel="noopener noopener">{this.props.url}</a>
                 </div>
             </div>
         );

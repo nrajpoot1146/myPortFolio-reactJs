@@ -1,4 +1,3 @@
-import { Zoom } from 'react-reveal';
 import './Me.css'
 
 function Me() {

@@ -10,10 +10,10 @@
     width: 60%;
     text-align: left;
     position: relative;
-    margin: 0;
+    padding: 0 0 20px 0;
     box-sizing: border-box;
-    padding: 0;
     justify-content: center;
+    
 }
 
 .TimeLineEntry:before {
@@ -26,6 +26,9 @@
 
 .TimeLineEntry-inner {
     margin-left: 30px;
+    background-color: gray;
+    padding: 10px 10px;
+    box-sizing: border-box;
 }
 
 .TimeLineEntry-inner .icon {
@@ -73,11 +76,7 @@
     background-color: antiquewhite;
 }
 
-.circle:hover {
-    /* background-color: aliceblue; */
+.UsedSkills {
+    text-align: center;
 }
-
-/* .color_1 {
-    background-color: #2c98;
-  } */
   
