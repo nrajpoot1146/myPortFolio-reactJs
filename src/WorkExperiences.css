@@ -7,7 +7,7 @@
     /* border: 0px solid red; */
     min-height: 100px;
     display: inline-block;
-    width: 60%;
+    width: 80%;
     text-align: left;
     position: relative;
     padding: 0 0 20px 0;
@@ -26,9 +26,15 @@
 
 .TimeLineEntry-inner {
     margin-left: 30px;
-    background-color: gray;
+    background-color: #343434a0;
     padding: 10px 10px;
     box-sizing: border-box;
+}
+
+.TimeLineEntry-inner:hover {
+    background-color: #343434ff;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 10px 2px #343434ff;
 }
 
 .TimeLineEntry-inner .icon {
